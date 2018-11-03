@@ -6,7 +6,6 @@ namespace Valve.VR.InteractionSystem
 {
     public class ResetFurniture : MonoBehaviour
     {
-        public Transform[] testob;
         public HoverButton hoverButton;
 
 
@@ -30,7 +29,7 @@ namespace Valve.VR.InteractionSystem
             //    testob[i].localPosition = new Vector3(0.0f, 0.0f, 0.0f);
             //}
 
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             //Application.LoadLevel();
             //GameObject planting = GameObject.Instantiate<GameObject>(prefab);
             //planting.transform.position = this.transform.position;

@@ -37,10 +37,10 @@ namespace Valve.VR.InteractionSystem
 			{
                 Vector3 test = new Vector3(transform.localPosition[0],transform.localPosition[1], transform.localPosition[2]);
 
-                if (linearMapping.value > 0.90)
+                if (linearMapping.value > 0.95)
                 {
                     test[0] = initialPosition[0] + Mathf.Sin(linearMapping.value * frequency[0]) * strength[0];
-                    test[1] = initialPosition[1] + Mathf.Sin((linearMapping.value-0.9f)*Mathf.PI*frequency[1])* strength[1];
+                    test[1] = initialPosition[1] + Mathf.Sin((linearMapping.value-0.95f)*Mathf.PI*2*frequency[1])* strength[1];
                 } else {
                     test[0] = initialPosition[0] + Mathf.Sin(linearMapping.value * (frequency[0])) * strength[0];
                     test[1] = initialPosition[1] + Mathf.Sin(linearMapping.value * (frequency[1])) * strength[0] * (1 + linearMapping.value);
