@@ -2260,7 +2260,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5d0d0c4a6637a194286297cd55a91cee, type: 2}
+      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 114000013988111622, guid: 88075a54c7fb1484ba25db394b612917,
         type: 2}
       propertyPath: onButtonDown.m_PersistentCalls.m_Calls.Array.data[0].m_Target
