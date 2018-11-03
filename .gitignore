@@ -5,6 +5,11 @@
 [Bb]uilds/
 Assets/AssetStoreTools*
 
+# Let's ignore controller bindings for controllers we don't own
+bindings_holographic_controller.json
+bindings_knuckles.json
+bindings_oculus_touch.json
+
 # Visual Studio cache directory
 .vs/
 
