@@ -1,17 +1,23 @@
 fileFormatVersion: 2
-guid: 12f534cedd839844fa590407138182be
+guid: ab30ed7d3ab0a4620864765407bed193
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: pCube1
+    100004: pCylinder3
     400000: //RootNode
-    2100000: unnamed
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Cylinder
-    7400000: Default Take
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+    400002: pCube1
+    400004: pCylinder3
+    2100000: aiStandardSurface1
+    2100002: lambert2
+    2100004: lambert3
+    2300000: pCube1
+    2300002: pCylinder3
+    3300000: pCube1
+    3300002: pCylinder3
+    4300000: pCube1
+    4300002: pCylinder3
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -64,7 +70,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -88,7 +94,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
