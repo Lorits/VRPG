@@ -6,9 +6,10 @@ public class MagnifyingGlassScript : MonoBehaviour {
 
 	public List<GameObject> lights;
 	public GameObject light;
+    public MeshRenderer rend;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -28,17 +29,18 @@ public class MagnifyingGlassScript : MonoBehaviour {
 			}
 		}
 
-		alpha = 1/(1 - maxAngle)*(angle - maxAngle); 
+		alpha = 1/(1 - maxAngle)*(angle - maxAngle);
+        rend = GetComponent<MeshRenderer>();
 
-		if(alpha > 0){
-			
-			MeshRenderer.enabled = true;
+        if (alpha > 0){            
+
+            rend.enabled = true;
 		
 			Color col = gameObject.GetComponent<Renderer>().material.color;
 			col.a = alpha - Mathf.Cos(35);
 			gameObject.GetComponent<Renderer>().material.color = col;
 		}else{
-			MeshRenderer.enabled = false;
+			rend.enabled = false;
 		}
 	}
 }

@@ -2,7 +2,7 @@
   "source": "Unity",
   "applications": [
     {
-      "app_key": "application.generated.unity.steamvr.exe",
+      "app_key": "application.generated.unity.vrpg.exe",
       "launch_type": "url",
       "url": "steam://launch/",
       "strings": {
