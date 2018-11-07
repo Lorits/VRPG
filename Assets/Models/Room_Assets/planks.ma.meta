@@ -1,0 +1,296 @@
+fileFormatVersion: 2
+guid: d964439efd0262f4f9af508cbb0a19bf
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Floor
+    100002: floorPlank
+    100004: floorPlank1
+    100006: floorPlank11
+    100008: floorPlank12
+    100010: floorPlank13
+    100012: floorPlank14
+    100014: floorPlank15
+    100016: floorPlank16
+    100018: floorPlank17
+    100020: floorPlank18
+    100022: floorPlank19
+    100024: floorPlank2
+    100026: floorPlank20
+    100028: floorPlank21
+    100030: floorPlank22
+    100032: floorPlank23
+    100034: floorPlank24
+    100036: floorPlank25
+    100038: floorPlank3
+    100040: floorPlank4
+    100042: floorPlank5
+    100044: floorPlank6
+    100046: floorPlank7
+    100048: floorPlank8
+    100050: plankPiece1
+    100052: //RootNode
+    100054: specialplank1a
+    100056: specialplank1b
+    100058: plankPiece2
+    100060: plankPiece3
+    100062: SpecialPlank1
+    100064: SpecialPlank2
+    100066: specialplank2a
+    100068: specialplank2b
+    100070: SpecialPlank3
+    100072: specialplank3a
+    100074: specialplank3b
+    100076: plankPiece3 1
+    100078: plankPiece3 2
+    100080: specialplank3a 1
+    100082: specialplank3a 2
+    100084: specialplank3b 1
+    100086: specialplank3b 2
+    100088: RegularPlanks
+    400000: Floor
+    400002: floorPlank
+    400004: floorPlank1
+    400006: floorPlank11
+    400008: floorPlank12
+    400010: floorPlank13
+    400012: floorPlank14
+    400014: floorPlank15
+    400016: floorPlank16
+    400018: floorPlank17
+    400020: floorPlank18
+    400022: floorPlank19
+    400024: floorPlank2
+    400026: floorPlank20
+    400028: floorPlank21
+    400030: floorPlank22
+    400032: floorPlank23
+    400034: floorPlank24
+    400036: floorPlank25
+    400038: floorPlank3
+    400040: floorPlank4
+    400042: floorPlank5
+    400044: floorPlank6
+    400046: floorPlank7
+    400048: floorPlank8
+    400050: plankPiece1
+    400052: //RootNode
+    400054: specialplank1a
+    400056: specialplank1b
+    400058: plankPiece2
+    400060: plankPiece3
+    400062: SpecialPlank1
+    400064: SpecialPlank2
+    400066: specialplank2a
+    400068: specialplank2b
+    400070: SpecialPlank3
+    400072: specialplank3a
+    400074: specialplank3b
+    400076: plankPiece3 1
+    400078: plankPiece3 2
+    400080: specialplank3a 1
+    400082: specialplank3a 2
+    400084: specialplank3b 1
+    400086: specialplank3b 2
+    400088: RegularPlanks
+    2100000: lambert1
+    2100002: lambert2
+    2300000: floorPlank
+    2300002: floorPlank1
+    2300004: floorPlank11
+    2300006: floorPlank12
+    2300008: floorPlank13
+    2300010: floorPlank14
+    2300012: floorPlank15
+    2300014: floorPlank16
+    2300016: floorPlank17
+    2300018: floorPlank18
+    2300020: floorPlank19
+    2300022: floorPlank2
+    2300024: floorPlank20
+    2300026: floorPlank21
+    2300028: floorPlank22
+    2300030: floorPlank23
+    2300032: floorPlank24
+    2300034: floorPlank25
+    2300036: floorPlank3
+    2300038: floorPlank4
+    2300040: floorPlank5
+    2300042: floorPlank6
+    2300044: floorPlank7
+    2300046: floorPlank8
+    2300048: plankPiece1
+    2300050: specialplank1a
+    2300052: specialplank1b
+    2300054: plankPiece2
+    2300056: plankPiece3
+    2300058: specialplank2a
+    2300060: specialplank2b
+    2300062: specialplank3a
+    2300064: specialplank3b
+    2300066: plankPiece3 1
+    2300068: plankPiece3 2
+    2300070: specialplank3a 1
+    2300072: specialplank3a 2
+    2300074: specialplank3b 1
+    2300076: specialplank3b 2
+    3300000: floorPlank
+    3300002: floorPlank1
+    3300004: floorPlank11
+    3300006: floorPlank12
+    3300008: floorPlank13
+    3300010: floorPlank14
+    3300012: floorPlank15
+    3300014: floorPlank16
+    3300016: floorPlank17
+    3300018: floorPlank18
+    3300020: floorPlank19
+    3300022: floorPlank2
+    3300024: floorPlank20
+    3300026: floorPlank21
+    3300028: floorPlank22
+    3300030: floorPlank23
+    3300032: floorPlank24
+    3300034: floorPlank25
+    3300036: floorPlank3
+    3300038: floorPlank4
+    3300040: floorPlank5
+    3300042: floorPlank6
+    3300044: floorPlank7
+    3300046: floorPlank8
+    3300048: plankPiece1
+    3300050: specialplank1a
+    3300052: specialplank1b
+    3300054: plankPiece2
+    3300056: plankPiece3
+    3300058: specialplank2a
+    3300060: specialplank2b
+    3300062: specialplank3a
+    3300064: specialplank3b
+    3300066: plankPiece3 1
+    3300068: plankPiece3 2
+    3300070: specialplank3a 1
+    3300072: specialplank3a 2
+    3300074: specialplank3b 1
+    3300076: specialplank3b 2
+    4300000: floorPlank25
+    4300002: floorPlank24
+    4300004: floorPlank23
+    4300006: floorPlank22
+    4300008: floorPlank21
+    4300010: floorPlank20
+    4300012: floorPlank19
+    4300014: floorPlank18
+    4300016: floorPlank17
+    4300018: floorPlank16
+    4300020: floorPlank15
+    4300022: floorPlank14
+    4300024: floorPlank13
+    4300026: floorPlank12
+    4300028: floorPlank8
+    4300030: floorPlank7
+    4300032: floorPlank6
+    4300034: floorPlank5
+    4300036: floorPlank4
+    4300038: floorPlank3
+    4300040: floorPlank2
+    4300042: floorPlank1
+    4300044: floorPlank
+    4300046: floorPlank11
+    4300048: specialplank1a
+    4300050: plankPiece1
+    4300052: specialplank1b
+    4300054: specialplank2a
+    4300056: plankPiece2
+    4300058: specialplank2b
+    4300060: specialplank3a
+    4300062: plankPiece3
+    4300064: specialplank3b
+    4300066: specialplank3a
+    4300068: plankPiece3
+    4300070: specialplank3b
+    4300072: specialplank3a
+    4300074: plankPiece3
+    4300076: specialplank3b
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

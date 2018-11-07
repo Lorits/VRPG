@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: 838410154d11f404dac03bcdeb72b36a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: aiSkyDomeLight1
+    100002: back1
+    100004: bezier1
+    100006: ceilingMolding
+    100008: front1
+    100010: imagePlane1
+    100012: left1
+    100014: list1
+    100016: list2
+    100018: list3
+    100020: list4
+    100022: pCube2
+    100024: pCube3
+    100026: pCube4
+    100028: pCube5
+    100030: pCube6
+    100032: pCube7
+    100034: planarTrimmedSurface1
+    100036: planarTrimmedSurface2
+    100038: //RootNode
+    100040: floorMoulding
+    100042: home
+    100044: list1 1
+    100046: list1 2
+    100048: list5
+    100050: list5 1
+    100052: sides1
+    100054: sides2
+    100056: list6
+    100058: list7
+    100060: glass
+    100062: glass 1
+    100064: panels
+    100066: panels 1
+    100068: pCube2 1
+    100070: pCube3 1
+    100072: polySurface1
+    100074: window
+    100076: window1
+    400000: aiSkyDomeLight1
+    400002: back1
+    400004: bezier1
+    400006: ceilingMolding
+    400008: front1
+    400010: imagePlane1
+    400012: left1
+    400014: list1
+    400016: list2
+    400018: list3
+    400020: list4
+    400022: pCube2
+    400024: pCube3
+    400026: pCube4
+    400028: pCube5
+    400030: pCube6
+    400032: pCube7
+    400034: planarTrimmedSurface1
+    400036: planarTrimmedSurface2
+    400038: //RootNode
+    400040: floorMoulding
+    400042: home
+    400044: list1 1
+    400046: list1 2
+    400048: list5
+    400050: list5 1
+    400052: sides1
+    400054: sides2
+    400056: list6
+    400058: list7
+    400060: glass
+    400062: glass 1
+    400064: panels
+    400066: panels 1
+    400068: pCube2 1
+    400070: pCube3 1
+    400072: polySurface1
+    400074: window
+    400076: window1
+    2000000: back1
+    2000002: front1
+    2000004: left1
+    2100000: lambert2
+    2100002: aiStandardSurface1
+    2100004: lambert1
+    2100006: windowpane
+    2100008: windowglass
+    2300000: list1
+    2300002: list2
+    2300004: list3
+    2300006: list4
+    2300008: pCube2
+    2300010: pCube3
+    2300012: pCube4
+    2300014: pCube5
+    2300016: pCube6
+    2300018: pCube7
+    2300020: planarTrimmedSurface1
+    2300022: planarTrimmedSurface2
+    2300024: home
+    2300026: list1 1
+    2300028: list1 2
+    2300030: list5
+    2300032: list5 1
+    2300034: list6
+    2300036: list7
+    2300038: glass
+    2300040: glass 1
+    2300042: pCube2 1
+    2300044: pCube3 1
+    2300046: polySurface1
+    3300000: list1
+    3300002: list2
+    3300004: list3
+    3300006: list4
+    3300008: pCube2
+    3300010: pCube3
+    3300012: pCube4
+    3300014: pCube5
+    3300016: pCube6
+    3300018: pCube7
+    3300020: planarTrimmedSurface1
+    3300022: planarTrimmedSurface2
+    3300024: home
+    3300026: list1 1
+    3300028: list1 2
+    3300030: list5
+    3300032: list5 1
+    3300034: list6
+    3300036: list7
+    3300038: glass
+    3300040: glass 1
+    3300042: pCube2 1
+    3300044: pCube3 1
+    3300046: polySurface1
+    4300000: pCube2
+    4300002: pCube3
+    4300004: pCube4
+    4300006: pCube5
+    4300008: pCube6
+    4300010: planarTrimmedSurface1
+    4300012: planarTrimmedSurface2
+    4300014: list1
+    4300016: list2
+    4300018: list3
+    4300020: list4
+    4300022: pCube7
+    4300024: home
+    4300026: list5
+    4300028: list1
+    4300030: list5
+    4300032: list1
+    4300034: list7
+    4300036: list6
+    4300038: glass
+    4300040: pCube2
+    4300042: pCube3
+    4300044: glass
+    4300046: polySurface1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
