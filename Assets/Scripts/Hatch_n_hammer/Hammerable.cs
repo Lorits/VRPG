@@ -9,8 +9,8 @@ public class Hammerable : MonoBehaviour
     Rigidbody m_Rigidbody;
     public PlaySound hitsound;
     public PlaySound breaksound;
-    public TextMesh textMesh;
-    public TextMesh shortText;
+    //public TextMesh textMesh;
+    //public TextMesh shortText;
     private float damage = 0;
     private bool broken = false;
     public float coolDown = 2.0f;
@@ -26,8 +26,8 @@ public class Hammerable : MonoBehaviour
             if (interactable.attachedToHand)
             {
                 float impactVelocity = Vector3.Magnitude(other.GetComponent<VelocityEstimator>().GetVelocityEstimate());
-                textMesh.text = "Hammertime at:\n" + impactVelocity.ToString("F2") + "speed";
-                shortText.text = impactVelocity.ToString("F2");
+                //textMesh.text = "Hammertime at:\n" + impactVelocity.ToString("F2") + "speed";
+                //shortText.text = impactVelocity.ToString("F2");
                 if (impactVelocity > 5.0f)
                 {
                     hitsound.Play();

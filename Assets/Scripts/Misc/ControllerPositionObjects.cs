@@ -44,7 +44,7 @@ namespace Valve.VR.InteractionSystem.Sample
             {
                 hand = interactable.attachedToHand.handType;
                 Vector2 m = a_move.GetAxis(hand);
-                movement = new Vector3(m.x*0.1f, 0.0f, m.y * 0.1f);
+                movement = Vector3.Scale(transform.forward,new Vector3(-m.y * 0.05f, 0.0f, -m.x * 0.05f));
                 player.GetComponent<Transform>().position = player.GetComponent<Transform>().position + movement;
 
                 //Vector3 mov = new Vector3(m.x, m.y, 0);
