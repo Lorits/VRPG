@@ -22,13 +22,13 @@ public class Hammerable : MonoBehaviour
         if (!broken && other.CompareTag("hammer") && Time.time-impactTime>coolDown)
         {
             Interactable interactable;
-            interactable = other.GetComponent<Interactable>();
+            interactable = other.GetComponentInParent<Interactable>();
             if (interactable.attachedToHand)
             {
-                float impactVelocity = Vector3.Magnitude(other.GetComponent<VelocityEstimator>().GetVelocityEstimate());
+                float impactVelocity = Vector3.Magnitude(other.GetComponentInParent<VelocityEstimator>().GetVelocityEstimate());
                 //textMesh.text = "Hammertime at:\n" + impactVelocity.ToString("F2") + "speed";
                 //shortText.text = impactVelocity.ToString("F2");
-                if (impactVelocity > 5.0f)
+                if (impactVelocity > 3.0f)
                 {
                     hitsound.Play();
                     impactTime = Time.time;
@@ -39,6 +39,9 @@ public class Hammerable : MonoBehaviour
                         broken = true;
                         m_Rigidbody = GetComponent<Rigidbody>();
                         m_Rigidbody.constraints = RigidbodyConstraints.None;
+                        m_Rigidbody.isKinematic = false;
+                        m_Rigidbody.useGravity = true;
+                        GetComponent<Interactable>().enabled = true;
                     }
                
                 }

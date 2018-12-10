@@ -1,0 +1,503 @@
+fileFormatVersion: 2
+guid: f76b4961f35dd3a47997af6aa849ef94
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ceilingMolding
+    100002: ceilingMolding1
+    100004: ceilingMolding2
+    100006: //RootNode
+    100008: floorhole
+    100010: floorMoulding
+    100012: floorMoulding1
+    100014: floorMoulding2
+    100016: glass
+    100018: glass 1
+    100020: glass 2
+    100022: glass 3
+    100024: glass 4
+    100026: glass 5
+    100028: list1
+    100030: list1 1
+    100032: list1 2
+    100034: list1 3
+    100036: list1 4
+    100038: list1 5
+    100040: list2
+    100042: list2 1
+    100044: list2 2
+    100046: list3
+    100048: list3 1
+    100050: list3 2
+    100052: list4
+    100054: list4 1
+    100056: list4 2
+    100058: list5
+    100060: list5 1
+    100062: list5 2
+    100064: list6
+    100066: list6 1
+    100068: list6 2
+    100070: list7
+    100072: list7 1
+    100074: list7 2
+    100076: lockedMachine:floorhole
+    100078: lockedMachine:shirt
+    100080: panels
+    100082: panels 1
+    100084: panels 2
+    100086: panels 3
+    100088: panels 4
+    100090: panels 5
+    100092: pCube2
+    100094: pCube2 1
+    100096: pCube2 2
+    100098: pCube2 3
+    100100: pCube2 4
+    100102: pCube2 5
+    100104: pCube3
+    100106: pCube3 1
+    100108: pCube3 2
+    100110: pCube3 3
+    100112: pCube3 4
+    100114: pCube3 5
+    100116: pCube4
+    100118: pCube5
+    100120: pCube6
+    100122: polySurface1
+    100124: polySurface2
+    100126: polySurface3
+    100128: polySurface4
+    100130: reference
+    100132: shirt
+    100134: transform1
+    100136: transform2
+    100138: window
+    100140: window1
+    100142: window2
+    100144: window3
+    100146: window4
+    100148: window5
+    100150: group1
+    100152: group2
+    100154: group3
+    100156: plankPiece3
+    100158: plankPiece3 1
+    100160: planks:Floor
+    100162: planks:plankPiece3
+    100164: planks:RegularPlanks
+    100166: planks:SpecialPlank1
+    100168: planks:SpecialPlank2
+    100170: planks:SpecialPlank3
+    100172: planks:specialplank3a
+    100174: planks:specialplank3b
+    100176: specialplank3a
+    100178: specialplank3a 1
+    100180: specialplank3b
+    100182: specialplank3b 1
+    100184: group4
+    100186: group5
+    100188: plankPiece3 2
+    100190: plankPiece3 3
+    100192: specialplank3a 2
+    100194: specialplank3a 3
+    100196: specialplank3b 2
+    100198: specialplank3b 3
+    100200: polySurface5
+    100202: polySurface6
+    400000: ceilingMolding
+    400002: ceilingMolding1
+    400004: ceilingMolding2
+    400006: //RootNode
+    400008: floorhole
+    400010: floorMoulding
+    400012: floorMoulding1
+    400014: floorMoulding2
+    400016: glass
+    400018: glass 1
+    400020: glass 2
+    400022: glass 3
+    400024: glass 4
+    400026: glass 5
+    400028: list1
+    400030: list1 1
+    400032: list1 2
+    400034: list1 3
+    400036: list1 4
+    400038: list1 5
+    400040: list2
+    400042: list2 1
+    400044: list2 2
+    400046: list3
+    400048: list3 1
+    400050: list3 2
+    400052: list4
+    400054: list4 1
+    400056: list4 2
+    400058: list5
+    400060: list5 1
+    400062: list5 2
+    400064: list6
+    400066: list6 1
+    400068: list6 2
+    400070: list7
+    400072: list7 1
+    400074: list7 2
+    400076: lockedMachine:floorhole
+    400078: lockedMachine:shirt
+    400080: panels
+    400082: panels 1
+    400084: panels 2
+    400086: panels 3
+    400088: panels 4
+    400090: panels 5
+    400092: pCube2
+    400094: pCube2 1
+    400096: pCube2 2
+    400098: pCube2 3
+    400100: pCube2 4
+    400102: pCube2 5
+    400104: pCube3
+    400106: pCube3 1
+    400108: pCube3 2
+    400110: pCube3 3
+    400112: pCube3 4
+    400114: pCube3 5
+    400116: pCube4
+    400118: pCube5
+    400120: pCube6
+    400122: polySurface1
+    400124: polySurface2
+    400126: polySurface3
+    400128: polySurface4
+    400130: reference
+    400132: shirt
+    400134: transform1
+    400136: transform2
+    400138: window
+    400140: window1
+    400142: window2
+    400144: window3
+    400146: window4
+    400148: window5
+    400150: group1
+    400152: group2
+    400154: group3
+    400156: plankPiece3
+    400158: plankPiece3 1
+    400160: planks:Floor
+    400162: planks:plankPiece3
+    400164: planks:RegularPlanks
+    400166: planks:SpecialPlank1
+    400168: planks:SpecialPlank2
+    400170: planks:SpecialPlank3
+    400172: planks:specialplank3a
+    400174: planks:specialplank3b
+    400176: specialplank3a
+    400178: specialplank3a 1
+    400180: specialplank3b
+    400182: specialplank3b 1
+    400184: group4
+    400186: group5
+    400188: plankPiece3 2
+    400190: plankPiece3 3
+    400192: specialplank3a 2
+    400194: specialplank3a 3
+    400196: specialplank3b 2
+    400198: specialplank3b 3
+    400200: polySurface5
+    400202: polySurface6
+    2100000: aiStandardSurface1
+    2100002: lambert1
+    2100004: windowpane
+    2100006: windowglass
+    2100008: lockedMachine_Jesus_HumanSkin
+    2100010: lambert7
+    2100012: floorrim
+    2100014: floor
+    2100016: planks_lambert2
+    2100018: insidesafe
+    2100020: saferim
+    2100022: brick
+    2100024: brokenwall
+    2100026: wallhole
+    2300000: floorhole
+    2300002: glass
+    2300004: glass 1
+    2300006: glass 2
+    2300008: glass 3
+    2300010: glass 4
+    2300012: glass 5
+    2300014: list1
+    2300016: list1 1
+    2300018: list1 2
+    2300020: list1 3
+    2300022: list1 4
+    2300024: list1 5
+    2300026: list2
+    2300028: list2 1
+    2300030: list2 2
+    2300032: list3
+    2300034: list3 1
+    2300036: list3 2
+    2300038: list4
+    2300040: list4 1
+    2300042: list4 2
+    2300044: list5
+    2300046: list5 1
+    2300048: list5 2
+    2300050: list6
+    2300052: list6 1
+    2300054: list6 2
+    2300056: list7
+    2300058: list7 1
+    2300060: list7 2
+    2300062: lockedMachine:floorhole
+    2300064: lockedMachine:shirt
+    2300066: pCube2
+    2300068: pCube2 1
+    2300070: pCube2 2
+    2300072: pCube2 3
+    2300074: pCube2 4
+    2300076: pCube2 5
+    2300078: pCube3
+    2300080: pCube3 1
+    2300082: pCube3 2
+    2300084: pCube3 3
+    2300086: pCube3 4
+    2300088: pCube3 5
+    2300090: pCube6
+    2300092: polySurface2
+    2300094: polySurface4
+    2300096: shirt
+    2300098: plankPiece3
+    2300100: plankPiece3 1
+    2300102: planks:plankPiece3
+    2300104: planks:specialplank3a
+    2300106: planks:specialplank3b
+    2300108: specialplank3a
+    2300110: specialplank3a 1
+    2300112: specialplank3b
+    2300114: specialplank3b 1
+    2300116: plankPiece3 2
+    2300118: plankPiece3 3
+    2300120: specialplank3a 2
+    2300122: specialplank3a 3
+    2300124: specialplank3b 2
+    2300126: specialplank3b 3
+    2300128: polySurface5
+    2300130: polySurface6
+    3300000: floorhole
+    3300002: glass
+    3300004: glass 1
+    3300006: glass 2
+    3300008: glass 3
+    3300010: glass 4
+    3300012: glass 5
+    3300014: list1
+    3300016: list1 1
+    3300018: list1 2
+    3300020: list1 3
+    3300022: list1 4
+    3300024: list1 5
+    3300026: list2
+    3300028: list2 1
+    3300030: list2 2
+    3300032: list3
+    3300034: list3 1
+    3300036: list3 2
+    3300038: list4
+    3300040: list4 1
+    3300042: list4 2
+    3300044: list5
+    3300046: list5 1
+    3300048: list5 2
+    3300050: list6
+    3300052: list6 1
+    3300054: list6 2
+    3300056: list7
+    3300058: list7 1
+    3300060: list7 2
+    3300062: lockedMachine:floorhole
+    3300064: lockedMachine:shirt
+    3300066: pCube2
+    3300068: pCube2 1
+    3300070: pCube2 2
+    3300072: pCube2 3
+    3300074: pCube2 4
+    3300076: pCube2 5
+    3300078: pCube3
+    3300080: pCube3 1
+    3300082: pCube3 2
+    3300084: pCube3 3
+    3300086: pCube3 4
+    3300088: pCube3 5
+    3300090: pCube6
+    3300092: polySurface2
+    3300094: polySurface4
+    3300096: shirt
+    3300098: plankPiece3
+    3300100: plankPiece3 1
+    3300102: planks:plankPiece3
+    3300104: planks:specialplank3a
+    3300106: planks:specialplank3b
+    3300108: specialplank3a
+    3300110: specialplank3a 1
+    3300112: specialplank3b
+    3300114: specialplank3b 1
+    3300116: plankPiece3 2
+    3300118: plankPiece3 3
+    3300120: specialplank3a 2
+    3300122: specialplank3a 3
+    3300124: specialplank3b 2
+    3300126: specialplank3b 3
+    3300128: polySurface5
+    3300130: polySurface6
+    4300000: list1
+    4300002: list2
+    4300004: list3
+    4300006: list4
+    4300008: list1
+    4300010: list7
+    4300012: list6
+    4300014: list5
+    4300016: pCube2
+    4300018: pCube3
+    4300020: glass
+    4300022: pCube2
+    4300024: pCube3
+    4300026: glass
+    4300028: lockedMachine:shirt
+    4300030: lockedMachine:floorhole
+    4300032: floorhole
+    4300034: shirt
+    4300036: polySurface2
+    4300038: pCube2
+    4300040: pCube3
+    4300042: glass
+    4300044: pCube2
+    4300046: pCube3
+    4300048: glass
+    4300050: list1
+    4300052: list7
+    4300054: list6
+    4300056: list5
+    4300058: list1
+    4300060: list2
+    4300062: list3
+    4300064: list4
+    4300066: polySurface4
+    4300068: pCube2
+    4300070: pCube3
+    4300072: glass
+    4300074: pCube2
+    4300076: pCube3
+    4300078: glass
+    4300080: pCube6
+    4300082: list1
+    4300084: list2
+    4300086: list3
+    4300088: list4
+    4300090: list1
+    4300092: list7
+    4300094: list6
+    4300096: list5
+    4300098: planks:specialplank3b
+    4300100: planks:plankPiece3
+    4300102: planks:specialplank3a
+    4300104: specialplank3b
+    4300106: plankPiece3
+    4300108: specialplank3a
+    4300110: specialplank3b
+    4300112: plankPiece3
+    4300114: specialplank3a
+    4300116: specialplank3b
+    4300118: plankPiece3
+    4300120: specialplank3a
+    4300122: specialplank3b
+    4300124: plankPiece3
+    4300126: specialplank3a
+    4300128: polySurface5
+    4300130: polySurface6
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -5,90 +5,99 @@ namespace Valve.VR.InteractionSystem
 {
 
 public class MagnifyTest : MonoBehaviour {
+        public int exponent = 20;
+        public float lightspan = 0.1f;
+        //public float focalPoint = 0.5f;
+        [Range(0.0f, 1.0f)] public float focalPoint = 0.1f;
         private LineRenderer lineRenderer;
         public Material material;
+
         //public float thickness = 0.01f;
         //public float scale = 0.1f;
         public Transform source;
         public int beamQuality = 20;
         public float beamLength = 5.0f;
         private Transform objectTrans;
-        private Gradient gradient;
+        //private Gradient gradient;
         private GradientColorKey[] colorKey;
         private GradientAlphaKey[] alphaKey;
-        private float testMin = 1.0f;
-        private float testMax = 0.0f;
-        // Use this for initialization
-        private bool fucked = false;
-        private bool debugging = false;
+        Keyframe[] keys;// = new Keyframe[beamQuality];
+        Vector3[] positions;// = new Vector3[beamQuality];
+
         void Start () {
+            keys = new Keyframe[beamQuality];
+            positions = new Vector3[beamQuality];
+
             CreateLine();
             CreateCurve(0.0f);
-            gradient = new Gradient();
+            //gradient = new Gradient();
+
             colorKey = new GradientColorKey[2];
-            alphaKey = new GradientAlphaKey[4];
+            alphaKey = new GradientAlphaKey[5];
             SetGradient(CalculateAlpha());
         }
-
         // Update is called once per frame
         void Update () {
-
+            
             //For most cases you can get away with Lerping rotations. 
             //That's because the angle used "under the hood" in a quaternion is half the angle of rotation
             // WHAT!?
             float alpha = CalculateAlpha();
             CreateCurve(alpha);
             lineRenderer.colorGradient = SetGradient(alpha);
-
-        }
-        float CalculateAlpha()
-        {
-            Vector3 dist = Vector3.Normalize(this.transform.position - source.position);
-            return Mathf.Pow(Mathf.Max(Vector3.Dot(dist, this.transform.forward.normalized), 0.0f), 5.0f);
-        }
-        Gradient SetGradient(float breakPoint)
-        {
-            if (debugging)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                if (breakPoint > testMax)
-                {
-                    testMax = breakPoint;
-                    Debug.Log("New Maximum: " + testMax);
-                }
-                if (breakPoint < testMin)
-                {
-                    testMin = breakPoint;
-                    Debug.Log("New Minimum: " + testMin);
-                }
+                Vector3 dist = Vector3.Normalize(this.transform.position - source.position);
+                float dot = Mathf.Min(1.0f, Mathf.Max(Vector3.Dot(dist, this.transform.forward.normalized),0.0f));
+                float dotExp = Mathf.Pow(dot, exponent);
+                Debug.Log("Dot = "+dot+", dotexp = "+dotExp);
+
             }
 
+        }
+        public float CalculateAlpha()
+        {
+            Vector3 dist = Vector3.Normalize(this.transform.position - source.position);
+            float dot = Mathf.Min(1.0f, Mathf.Max(Vector3.Dot(dist, this.transform.forward.normalized), 0.0f));
+            float dotExp = Mathf.Pow(dot, exponent);
+            
+            return dotExp;
+        }
+        Gradient SetGradient(float strength)
+        {
+            Gradient gradient;
             gradient = new Gradient();
             colorKey = new GradientColorKey[2];
-            alphaKey = new GradientAlphaKey[4];
+            alphaKey = new GradientAlphaKey[5];
             colorKey[0].color = Color.white;
             colorKey[0].time = 0.0f;
+
             colorKey[1].color = Color.yellow;
             colorKey[1].time = 1.0f ;
-            //n - incr*5 = 0
-            //n = qual
-            //incr = len/qual
-            //qual - len/qual*5 = 0
-            //(20 - 2/20*5)
-            //incr*5 = 20
-            //incr = 4
-            //incrNorm = 0.2
 
-            alphaKey[0].alpha = 0.2f;
+            //start0
+            //befMid
+            //mid
+            //aftMid
+            //end0
+
+            alphaKey[0].alpha = 0.0f; // start with no alpha
             alphaKey[0].time = 0.0f;
-            alphaKey[1].alpha = 1.0f;
-            alphaKey[1].time = 0.4f;
-            alphaKey[2].alpha = 0.2f;
-            alphaKey[2].time = 0.5f;
+
+            alphaKey[1].alpha = 0.0f;
+            alphaKey[1].time = focalPoint * (1 + lightspan); // build up
+
+            alphaKey[2].alpha = 1.0f * strength;
+            alphaKey[2].time = focalPoint; // strong light at focal point
+
             alphaKey[3].alpha = 0.0f;
-            alphaKey[3].time = 0.6f;
+            alphaKey[3].time = focalPoint * (1 - lightspan); //end light
+
+            alphaKey[4].alpha = 0.0f;
+            alphaKey[4].time = focalPoint * 1.5f; //end with no alpha (for nice fade)
 
             gradient.SetKeys(colorKey, alphaKey);
-            
+            //Debug.Log("Test");
             return gradient;
         }
         void CreateLine()
@@ -115,24 +124,17 @@ public class MagnifyTest : MonoBehaviour {
             lineRenderer.lightProbeUsage = UnityEngine.Rendering.LightProbeUsage.Off;
             lineRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
             lineRenderer.material = material;
-#if (UNITY_5_4)
-                lineRenderer.SetWidth(thickness, thickness);
-#else
-            //lineRenderer.startWidth = 0.0f;
-            //lineRenderer.endWidth = thickness;
-            
-#endif
-           
 
         }
         void CreateCurve(float power)
         {
             //length:
-            lineRenderer.transform.localScale = new Vector3(1.0f,1.0f,power);
-            float scale = 0.05f;
-            Keyframe[] keys = new Keyframe[beamQuality];
-            Vector3[] positions = new Vector3[beamQuality];
+            lineRenderer.transform.localScale = new Vector3(1.0f,1.0f,1.0f); 
+            float scale = 0.1f;
+            //Keyframe[] keys = new Keyframe[beamQuality];
+            //Vector3[] positions = new Vector3[beamQuality];
             float increment = beamLength / (float)beamQuality;
+            float focalPower = focalPoint*beamQuality;
             //Yes we have to do this. 
             //Because Unity's line renderer was made by a monkey with a typewriter.
             for (int i = 0; i < positions.Length; i++)
@@ -140,7 +142,7 @@ public class MagnifyTest : MonoBehaviour {
                 positions[i] = new Vector3(0.0f, 0.0f, i * increment);
                 // keyframe args: time, value
                 //gotta find the nearest multiple of 0.05
-                keys[i] = new Keyframe((float)i/(float)positions.Length, Mathf.Abs(scale*(float)((float)positions.Length-((float)i*5.0f)) * increment)); //; * power);
+                keys[i] = new Keyframe((float)i/(float)positions.Length,Mathf.Abs(scale*(1.0f-(float)i/focalPower)) ); //; * power); //Mathf.Abs((float)((float)positions.Length*focalPower-((float)i)) * increment)
                 //keys[i].inTangent = 0.0f;
                 //keys[i].outTangent = 0.0f;
                 keys[i].weightedMode = WeightedMode.Both;

@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: cf9005e973d364d55974e74e1437241b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: lockedMachine:clothespin
+    100002: lockedMachine:clothespin1
+    100004: lockedMachine:pantbutton
+    100006: lockedMachine:pants1
+    100008: lockedMachine:pCube18
+    100010: lockedMachine:pCube19
+    100012: lockedMachine:pCube19 1
+    100014: lockedMachine:pCube20
+    100016: lockedMachine:pCube20 1
+    100018: lockedMachine:pCylinder17
+    100020: lockedMachine:pCylinder18
+    100022: lockedMachine:pCylinder19
+    100024: lockedMachine:pCylinder20
+    100026: lockedMachine:pGear2
+    100028: lockedMachine:pGear3
+    100030: lockedMachine:pipes
+    100032: lockedMachine:steamExhaust
+    100034: lockedMachine:string2
+    100036: //RootNode
+    400000: lockedMachine:clothespin
+    400002: lockedMachine:clothespin1
+    400004: lockedMachine:pantbutton
+    400006: lockedMachine:pants1
+    400008: lockedMachine:pCube18
+    400010: lockedMachine:pCube19
+    400012: lockedMachine:pCube19 1
+    400014: lockedMachine:pCube20
+    400016: lockedMachine:pCube20 1
+    400018: lockedMachine:pCylinder17
+    400020: lockedMachine:pCylinder18
+    400022: lockedMachine:pCylinder19
+    400024: lockedMachine:pCylinder20
+    400026: lockedMachine:pGear2
+    400028: lockedMachine:pGear3
+    400030: lockedMachine:pipes
+    400032: lockedMachine:steamExhaust
+    400034: lockedMachine:string2
+    400036: //RootNode
+    2100000: lambert1
+    2100002: lockedMachine_spinnerHousing
+    2100004: lockedMachine_spinnerInner
+    2100006: lockedMachine_spinnerouter
+    2100008: lockedMachine_pipe
+    2100010: lockedMachine_string1
+    2100012: lockedMachine_wood
+    2100014: lockedMachine_pants
+    2100016: lockedMachine_pantbutton1
+    2300000: lockedMachine:pantbutton
+    2300002: lockedMachine:pants1
+    2300004: lockedMachine:pCube18
+    2300006: lockedMachine:pCube19
+    2300008: lockedMachine:pCube19 1
+    2300010: lockedMachine:pCube20
+    2300012: lockedMachine:pCube20 1
+    2300014: lockedMachine:pCylinder17
+    2300016: lockedMachine:pCylinder18
+    2300018: lockedMachine:pCylinder19
+    2300020: lockedMachine:pCylinder20
+    2300022: lockedMachine:pGear2
+    2300024: lockedMachine:pGear3
+    2300026: lockedMachine:steamExhaust
+    2300028: lockedMachine:string2
+    2300030: //RootNode
+    3300000: lockedMachine:pantbutton
+    3300002: lockedMachine:pants1
+    3300004: lockedMachine:pCube18
+    3300006: lockedMachine:pCube19
+    3300008: lockedMachine:pCube19 1
+    3300010: lockedMachine:pCube20
+    3300012: lockedMachine:pCube20 1
+    3300014: lockedMachine:pCylinder17
+    3300016: lockedMachine:pCylinder18
+    3300018: lockedMachine:pCylinder19
+    3300020: lockedMachine:pCylinder20
+    3300022: lockedMachine:pGear2
+    3300024: lockedMachine:pGear3
+    3300026: lockedMachine:steamExhaust
+    3300028: lockedMachine:string2
+    3300030: //RootNode
+    4300000: lockedMachine:steamer
+    4300002: lockedMachine:steamExhaust
+    4300004: lockedMachine:pGear2
+    4300006: lockedMachine:pGear3
+    4300008: lockedMachine:pCube18
+    4300010: lockedMachine:pCylinder17
+    4300012: lockedMachine:pCylinder18
+    4300014: lockedMachine:pCylinder19
+    4300016: lockedMachine:pCylinder20
+    4300018: lockedMachine:string2
+    4300020: lockedMachine:pCube19
+    4300022: lockedMachine:pCube20
+    4300024: lockedMachine:pCube19
+    4300026: lockedMachine:pCube20
+    4300028: lockedMachine:pants1
+    4300030: lockedMachine:pantbutton
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

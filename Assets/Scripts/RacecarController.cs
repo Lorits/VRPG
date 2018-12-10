@@ -9,6 +9,12 @@ namespace Valve.VR.InteractionSystem.Sample
 {
     public class RacecarController : MonoBehaviour
     {
+        public float maxspeed = 2.0f;
+        public float minspeed = 10000.0f;
+
+        public float brakeforce = 0.9f; // lerp value
+        public float acceleration = 0.5f; // lerp value
+
         public Transform modelJoystick;
         public float joystickRot = 20;
 
@@ -127,16 +133,16 @@ namespace Valve.VR.InteractionSystem.Sample
             //buttonReset.localScale = new Vector3(1, 1, b_reset ? 0.4f : 1.0f);
 
             //buggy.steer = steer;
-            if (throttle != 0)
+            if (interactable.attachedToHand && throttle > 0.1f)
             {
-                speed -= 0.02f;
+                speed = Mathf.Lerp(speed, maxspeed, acceleration);
 
-                car.GetComponent<carLoop>().speed = Mathf.Max((int)speed,3);
-            } else
+                car.GetComponent<carLoop>().speed = Mathf.Max((int)speed, (int)maxspeed);
+            }
+            else
             {
-                speed = 30.0f;
-
-                car.GetComponent<carLoop>().speed = Mathf.Min(car.GetComponent<carLoop>().speed+1, 1000);
+                speed = Mathf.Lerp(speed, minspeed, brakeforce);
+                car.GetComponent<carLoop>().speed = Mathf.Min((int)speed, (int)minspeed);
 
             }
             //car.GetComponent<carLoop>().speed = (int)Mathf.Floor(throttle*10.0f);
@@ -144,8 +150,8 @@ namespace Valve.VR.InteractionSystem.Sample
             //buggy.controllerReference = transform;
         }
 
-      
 
-        
+
+
     }
 }

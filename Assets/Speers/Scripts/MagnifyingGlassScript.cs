@@ -23,7 +23,6 @@ public class MagnifyingGlassScript : MonoBehaviour {
 
 		foreach(GameObject light in lights){
 			Vector3 dir = (light.transform.position - transform.position).normalized;
-			Debug.Log(dir);
 			if(angle < Mathf.Max(maxAngle, Vector3.Dot(dir,transform.forward))){
 				angle = Mathf.Max(maxAngle, Vector3.Dot(dir,transform.forward));
 			}

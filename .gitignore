@@ -4,6 +4,8 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
+Assets/3rd Party Resources*
+Assets/3rd Party Resources.meta
 
 # Let's ignore controller bindings for controllers we don't own
 bindings_holographic_controller.json
