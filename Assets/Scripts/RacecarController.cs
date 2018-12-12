@@ -22,7 +22,8 @@ namespace Valve.VR.InteractionSystem.Sample
         public float triggerRot = 20;
         private float speed = 30.0f;
         public Transform car;
-
+        private int carspeed;
+        private bool autodrive;
         //public Transform buttonBrake;
         //public Transform buttonReset;
 
@@ -73,6 +74,9 @@ namespace Valve.VR.InteractionSystem.Sample
 
             interactable = GetComponent<Interactable>();
             interactable.activateActionSetOnAttach = actionSet;
+
+            carspeed = car.GetComponent<carLoop>().speed;
+            autodrive = car.GetComponent<carLoop>().autodrive;
         }
 
         private void Update()
@@ -132,18 +136,21 @@ namespace Valve.VR.InteractionSystem.Sample
             //buttonBrake.localScale = new Vector3(1, 1, b_brake ? 0.4f : 1.0f);
             //buttonReset.localScale = new Vector3(1, 1, b_reset ? 0.4f : 1.0f);
 
-            //buggy.steer = steer;
-            if (interactable.attachedToHand && throttle > 0.1f)
+            //buggy.steer = steer;'
+            if (!autodrive)
             {
-                speed = Mathf.Lerp(speed, maxspeed, acceleration);
+                if (interactable.attachedToHand && throttle > 0.1f)
+                {
+                    speed = Mathf.Lerp(speed, maxspeed, acceleration);
 
-                car.GetComponent<carLoop>().speed = Mathf.Max((int)speed, (int)maxspeed);
-            }
-            else
-            {
-                speed = Mathf.Lerp(speed, minspeed, brakeforce);
-                car.GetComponent<carLoop>().speed = Mathf.Min((int)speed, (int)minspeed);
+                    carspeed = Mathf.Max((int)speed, (int)maxspeed);
+                }
+                else
+                {
+                    speed = Mathf.Lerp(speed, minspeed, brakeforce);
+                    carspeed = Mathf.Min((int)speed, (int)minspeed);
 
+                }
             }
             //car.GetComponent<carLoop>().speed = (int)Mathf.Floor(throttle*10.0f);
             //buggy.handBrake = brake;

@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 33229962576052258}
   - component: {fileID: 23052727545795892}
   - component: {fileID: 65665205097688778}
-  - component: {fileID: 111796886008945640}
   - component: {fileID: 95419627391123444}
   - component: {fileID: 114075732886619820}
   m_Layer: 0
@@ -71,14 +70,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1294422889379692}
-  m_LocalRotation: {x: 0.34352586, y: 0.6872473, z: -0.6351512, w: -0.07914631}
-  m_LocalPosition: {x: 9.348, y: 1.163, z: -0.899}
+  m_LocalRotation: {x: 0.31965885, y: 0.65925896, z: -0.679275, w: 0.042207208}
+  m_LocalPosition: {x: 9.0448, y: 1.3456, z: -1.0605}
   m_LocalScale: {x: 0.024654387, y: 0.024654387, z: 0.024654387}
   m_Children:
   - {fileID: 4099340405184428}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 125.052, y: 71.66799, z: -85.72101}
+  m_LocalEulerAnglesHint: {x: 112.68799, y: 78.99799, z: -70.746}
 --- !u!23 &23052727545795892
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -178,21 +177,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!111 &111796886008945640
-Animation:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1516135054230050}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 4a9bf1e54372c480393d089f4f65a872, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 9c3386345037647edb6ebd0efca231a3, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &114075732886619820
 MonoBehaviour:
   m_ObjectHideFlags: 1

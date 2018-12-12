@@ -17,7 +17,7 @@ namespace Valve.VR.InteractionSystem
         private void Start()
         {
             rigid = GetComponent<Rigidbody>();
-            toggle = toggleVR.GetComponent<toggleVR>().VR_Toggle;
+            toggle = toggleVR.GetComponent<DevHelper>().VRToggle;
         }
         private void Update()
 
