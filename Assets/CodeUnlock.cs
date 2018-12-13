@@ -28,14 +28,14 @@ namespace Valve.VR.InteractionSystem
             //}
             if (Input.GetKeyDown(KeyCode.F))
                     {
-                        Debug.Log("Respect");
-                latch.isKinematic = false;
+                //        Debug.Log("Respect");
+                //latch.isKinematic = false;
 
                     }
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                Debug.Log("Locked = "+locked+", Amplitude = " +frequency.value + ", Amplitude rounded = "+ Mathf.RoundToInt(frequency.value * 10.0f)
-                          + ", Frequency = " + amplitude.value + ", Frequency rounded = " + Mathf.RoundToInt(amplitude.value * 10.0f));
+                //Debug.Log("Locked = "+locked+", Amplitude = " +frequency.value + ", Amplitude rounded = "+ Mathf.RoundToInt(frequency.value * 10.0f)
+                //          + ", Frequency = " + amplitude.value + ", Frequency rounded = " + Mathf.RoundToInt(amplitude.value * 10.0f));
 
             }
             if (locked)

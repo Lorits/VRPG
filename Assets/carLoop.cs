@@ -106,7 +106,7 @@ namespace Valve.VR.InteractionSystem
                        // transform.GetComponent<Rigidbody>().useGravity = false;
 
                         flying = true;
-                        transform.Rotate(0, 0, -25, Space.Self);
+                        transform.Rotate(0, 0, -22, Space.Self);
                     }
                     transform.GetComponent<Rigidbody>().AddRelativeForce(velocity);
 
@@ -118,25 +118,20 @@ namespace Valve.VR.InteractionSystem
                     transform.GetComponent<Rigidbody>().AddRelativeForce(velocity);//    AddForce(velocity);//         = velocity;
 
                 }
-                if (autodrive)
+
+                transform.position = Vector3.Lerp(positions[count], positions[(count + 1) % (pointLength)], 1.0f / (float)speed * (float)currentpos);
+                transform.rotation = Quaternion.Lerp(rotations[count], rotations[(count + 1) % (pointLength)], 1.0f / (float)speed * (float)currentpos);
+                currentpos++;
+                if (currentpos > speed)
                 {
-                    transform.position = Vector3.Lerp(positions[count], positions[(count + 1) % (pointLength)], 1.0f / (float)speed * (float)currentpos);
-                    transform.rotation = Quaternion.Lerp(rotations[count], rotations[(count + 1) % (pointLength)], 1.0f / (float)speed * (float)currentpos);
-                    currentpos++;
-                    if (currentpos > speed)
+                    currentpos = 0;
+                    count++;
+                    if (count >= pointLength)
                     {
-                        currentpos = 0;
-                        count++;
-                        if (count >= pointLength)
-                        {
-                            count = 0;
-                        }
+                        count = 0;
                     }
                 }
-                else
-                {
-
-                }
+                
             }
         }
     }

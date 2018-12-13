@@ -70,13 +70,17 @@ namespace Valve.VR.InteractionSystem
         public bool isHovering { get; protected set; }
         public bool wasHovering { get; protected set; }
 
+        private CsvReadWrite csvWriter;
+        private float startHoldTime;
+
         private void Start()
         {
             highlightMat = (Material)Resources.Load("SteamVR_HoverHighlight", typeof(Material));
 
             if (highlightMat == null)
                 Debug.LogError("Hover Highlight Material is missing. Please create a material named 'SteamVR_HoverHighlight' and place it in a Resources folder");
-            
+
+            csvWriter = GameObject.Find("Dev Helper").GetComponent<CsvReadWrite>();
         }
 
         private bool ShouldIgnoreHighlight(Component component)
@@ -234,6 +238,8 @@ namespace Valve.VR.InteractionSystem
         
         private void OnAttachedToHand( Hand hand )
         {
+            csvWriter.AddObject(name, tag);
+            startHoldTime = Time.time;
             if (activateActionSetOnAttach != null)
                 activateActionSetOnAttach.ActivatePrimary();
 
@@ -247,6 +253,8 @@ namespace Valve.VR.InteractionSystem
 
 		private void OnDetachedFromHand( Hand hand )
         {
+            csvWriter.AddObjectDuration(name, tag, Time.time - startHoldTime);
+
             if (activateActionSetOnAttach != null)
             {
                 if (hand.otherHand.currentAttachedObjectInfo.HasValue == false || (hand.otherHand.currentAttachedObjectInfo.Value.interactable != null && 

@@ -10,6 +10,12 @@ TagManager:
   - hammer
   - burnable
   - padlock
+  - puzzle
+  - radio
+  - magnify
+  - lockedDoor
+  - carFishing
+  - drawer
   layers:
   - Default
   - TransparentFX

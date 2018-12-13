@@ -47,10 +47,10 @@ public class MagnifyTest : MonoBehaviour {
             lineRenderer.colorGradient = SetGradient(alpha);
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                Vector3 dist = Vector3.Normalize(this.transform.position - source.position);
-                float dot = Mathf.Min(1.0f, Mathf.Max(Vector3.Dot(dist, this.transform.forward.normalized),0.0f));
-                float dotExp = Mathf.Pow(dot, exponent);
-                Debug.Log("Dot = "+dot+", dotexp = "+dotExp);
+                //Vector3 dist = Vector3.Normalize(this.transform.position - source.position);
+                //float dot = Mathf.Min(1.0f, Mathf.Max(Vector3.Dot(dist, this.transform.forward.normalized),0.0f));
+                //float dotExp = Mathf.Pow(dot, exponent);
+                //Debug.Log("Dot = "+dot+", dotexp = "+dotExp);
 
             }
 

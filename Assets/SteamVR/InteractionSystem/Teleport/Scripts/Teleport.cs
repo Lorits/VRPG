@@ -166,10 +166,14 @@ namespace Valve.VR.InteractionSystem
 			invalidReticleMaxScale *= invalidReticleStartingScale;
 		}
 
+        private CsvReadWrite csvWriter;
 
-		//-------------------------------------------------
-		void Start()
+        //-----v--------------------------------------------
+        void Start()
 		{
+
+             csvWriter = GameObject.Find("Dev Helper").GetComponent<CsvReadWrite>();
+
 			teleportMarkers = GameObject.FindObjectsOfType<TeleportMarkerBase>();
 
 			HidePointer();
@@ -854,7 +858,7 @@ namespace Valve.VR.InteractionSystem
 		private void TeleportPlayer()
 		{
 			teleporting = false;
-
+            
 			Teleport.PlayerPre.Send( pointedAtTeleportMarker );
 
 			SteamVR_Fade.Start( Color.clear, currentFadeTime );
@@ -865,7 +869,7 @@ namespace Valve.VR.InteractionSystem
 			if ( teleportPoint != null )
 			{
 				teleportPosition = teleportPoint.transform.position;
-
+                csvWriter.AddTeleport(teleportPosition.x, teleportPosition.z);
 				//Teleport to a new scene
 				if ( teleportPoint.teleportType == TeleportPoint.TeleportPointType.SwitchToNewScene )
 				{
