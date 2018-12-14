@@ -22,6 +22,7 @@ namespace Valve.VR.InteractionSystem
         public MeshRenderer nohole;
         public MeshRenderer hole;
         public MeshRenderer bricks;
+        public BoxCollider bcol;
         // Use this for initialization
         void Start()
         {
@@ -62,12 +63,39 @@ namespace Valve.VR.InteractionSystem
                 nohole.enabled = false;
                 hole.enabled = true;
                 bricks.enabled = true;
+                bcol.enabled = false;
                 Destroy(target.gameObject);
 
                 Destroy(gameObject);
                 
             }
         }
+        private void OnAttachedToHand(Hand hand)
+        {
+            onTrack = false;
+        }
+        private void OnDetachedFromHand(Hand hand)
+        {
+            float smallestDistance = 10;
+            Vector3 snapVector = new Vector3(0, 0, 0);
+            foreach(Vector3 p in positions)
+            {
+                float dist = Vector3.Distance(transform.position, p);
+                if (dist < smallestDistance)
+                {
+                    snapVector = p;
+                    smallestDistance = dist;
+                }
+            }
+            if(smallestDistance < 0.25)
+            {
+                transform.position = snapVector;
+                onTrack = true;
+            }
+
+
+        }
+
         void Update()
         {
             //flying = true;

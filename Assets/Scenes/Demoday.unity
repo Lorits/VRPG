@@ -17923,6 +17923,184 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f76b4961f35dd3a47997af6aa849ef94, type: 3}
   m_IsPrefabAsset: 0
+--- !u!1 &764600785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: f76b4961f35dd3a47997af6aa849ef94,
+    type: 3}
+  m_PrefabInternal: {fileID: 764600784}
+--- !u!65 &764600786
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764600785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7359674, y: 0.9209006, z: 2.1811352}
+  m_Center: {x: -0.5847467, y: 0.7967435, z: -9.197347}
+--- !u!65 &764600787
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764600785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7359674, y: 1.017499, z: 2.1811352}
+  m_Center: {x: -0.5847467, y: -0.86137056, z: -9.197347}
+--- !u!65 &764600788
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764600785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5527878, y: 0.6872008, z: 0.04990959}
+  m_Center: {x: 5.5735397, y: 0.9232949, z: -8.13314}
+--- !u!65 &764600789
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764600785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5285721, y: 0.14660895, z: 1.525032}
+  m_Center: {x: 5.561432, y: -1.3237836, z: -8.870701}
+--- !u!65 &764600790
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764600785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5527873, y: 1.4780762, z: 0.04990959}
+  m_Center: {x: 5.5735397, y: -0.1531421, z: -8.13314}
+--- !u!65 &764600791
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764600785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4259057, y: 3.2416797, z: 2.031334}
+  m_Center: {x: 7.5569773, y: 0, z: -9.09424}
+--- !u!65 &764600792
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764600785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.616535, y: 2.6496315, z: 0.8891134}
+  m_Center: {x: 2.5118694, y: -0.065580845, z: -8.552742}
+--- !u!65 &764600793
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764600785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0743114, y: 2.74024, z: 2.1811352}
+  m_Center: {x: -1.4617336, y: 0, z: -9.197347}
+--- !u!65 &764600794
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764600785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5079288, y: 2.6584554, z: 10.373876}
+  m_Center: {x: 9.6137495, y: 0, z: -3.2135549}
+--- !u!65 &764600795
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764600785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.613226, y: 3.0402865, z: 1.8075428}
+  m_Center: {x: 3.564601, y: 0, z: 2.8677015}
+--- !u!65 &764600796
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764600785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3511744, y: 3.6400604, z: 11.385445}
+  m_Center: {x: -2.6517549, y: 0, z: -2.643591}
+--- !u!65 &764600797
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764600785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.586458, y: 1.5868666, z: 0.8772392}
+  m_Center: {x: -0.15950143, y: 0.4637605, z: -9.849295}
+--- !u!65 &764600798
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764600785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7359674, y: 0.038092375, z: 2.074688}
+  m_Center: {x: -0.5847467, y: -0.27391636, z: -9.25057}
+--- !u!1 &764600799 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 101142, guid: f76b4961f35dd3a47997af6aa849ef94,
+    type: 3}
+  m_PrefabInternal: {fileID: 764600784}
+--- !u!65 &764600800
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764600799}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13.843738, y: 1.7473719, z: 21.642456}
+  m_Center: {x: -2.4457953, y: -0.33857843, z: 7.243343}
 --- !u!1 &769124921
 GameObject:
   m_ObjectHideFlags: 0
@@ -23510,6 +23688,8 @@ GameObject:
   - component: {fileID: 972732082}
   - component: {fileID: 972732081}
   - component: {fileID: 972732080}
+  - component: {fileID: 972732084}
+  - component: {fileID: 972732083}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -23543,7 +23723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d073ddaa115b4ff7bd0dd0b8702a5b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autodrive: 1
+  autodrive: 0
   onTrack: 0
   pointLength: 24
   speed: 1
@@ -23554,6 +23734,7 @@ MonoBehaviour:
   nohole: {fileID: 45240075}
   hole: {fileID: 1897561186}
   bricks: {fileID: 874924889}
+  bcol: {fileID: 764600788}
 --- !u!65 &972732080
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23595,6 +23776,85 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &972732083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 972732077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffefbea063cab884ca33e5a449e5c22c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachmentFlags: 8
+  attachmentOffset: {fileID: 0}
+  catchingSpeedThreshold: -1
+  releaseVelocityStyle: 1
+  releaseVelocityTimeOffset: -0.011
+  scaleReleaseVelocity: 1.1
+  restoreOriginalParent: 0
+  attachEaseIn: 0
+  snapAttachEaseInCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  snapAttachEaseInTime: 0.15
+  onPickUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onDetachFromHand:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  snapAttachEaseInCompleted: 0
+  interactable: {fileID: 0}
+--- !u!114 &972732084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 972732077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateActionSetOnAttach: {fileID: 0}
+  hideHandOnAttach: 1
+  hideSkeletonOnAttach: 0
+  hideControllerOnAttach: 0
+  handAnimationOnPickup: 0
+  setRangeOfMotionOnPickup: -1
+  useHandObjectAttachmentPoint: 1
+  handFollowTransform: {fileID: 0}
+  handFollowTransformPosition: 1
+  handFollowTransformRotation: 1
+  highlightOnHover: 1
+  hideHighlight: []
 --- !u!1 &974980623
 GameObject:
   m_ObjectHideFlags: 0
@@ -55161,6 +55421,7 @@ MonoBehaviour:
   nohole: {fileID: 0}
   hole: {fileID: 0}
   bricks: {fileID: 0}
+  bcol: {fileID: 0}
 --- !u!65 &2092853733
 BoxCollider:
   m_ObjectHideFlags: 0
