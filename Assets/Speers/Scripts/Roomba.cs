@@ -17,7 +17,6 @@ public class Roomba : MonoBehaviour {
 	public bool stop = true;
 
 	bool locked = false;
-	public GameObject collisionObject;
 	Vector3 CollisionNormalVector;
 
 	//Speed of the roomba (Follows the z axis)
@@ -28,18 +27,27 @@ public class Roomba : MonoBehaviour {
 	//Time Variables
 	public float lasttime = 0;
 	public float thistime = 0;
+
+	public int layer;
 	
 	void OnCollisionEnter(Collision other){
 		Debug.Log("COLLIDES!");
-		if(other.gameObject.tag == "Obstruction" && !locked){
+		if(other.gameObject.layer == layer && !locked){
 			Debug.Log("COLLIDES2!");
 			turn = true;
 			locked = true;
-			collisionObject = other.gameObject;
 			CollisionNormalVector = other.contacts[0].normal;
 		}else if(other.gameObject.tag == "Suckable" && !eject){
 			sucked.Add(other.gameObject);
 			other.gameObject.SetActive(false);
+		}
+	}
+
+	void OnTriggerEnter(Collider coll){
+		if(coll.gameObject.layer == layer && !locked){
+			turn = true;
+			locked = true;
+			CollisionNormalVector = Quaternion.AngleAxis(180,Vector3.up) * transform.forward;
 		}
 	}
 
@@ -81,7 +89,7 @@ public class Roomba : MonoBehaviour {
 			transform.position = Vector3.Lerp(transform.localPosition,transform.localPosition + (dir)/100 * Speed,1);
 		}
 		// Debug.Log("forward = "+ transform.forward + "newPos = " + newPos);
-		if(Input.GetButton("Eject")){
+		if(Input.GetKeyDown("e")){
 			launchSucked();
 		}
 
@@ -139,10 +147,10 @@ public class Roomba : MonoBehaviour {
 		turning = false;
      }
 
-	 void launchSucked(){
+	public void launchSucked(){
 		 foreach(GameObject Obj in sucked){
 			 Obj.SetActive(true);
-			 Obj.transform.position = Vector3.Slerp(transform.position - dir, transform.position - dir,0.01f);
+			 Obj.transform.position = Vector3.Slerp(transform.position - dir + new Vector3(0,0.5f,0), transform.position - dir + new Vector3(0,0.5f,0),0.01f);
 			sucked = new List<GameObject>();
 		 }
 		eject = true;

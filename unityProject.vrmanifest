@@ -2,12 +2,12 @@
   "source": "Unity",
   "applications": [
     {
-      "app_key": "application.generated.unity.vrpg.exe",
+      "app_key": "application.generated.unity.newunityproject1vvrhpsadfoj.exe",
       "launch_type": "url",
       "url": "steam://launch/",
       "strings": {
         "en_us": {
-          "name": "VRPG [Testing]"
+          "name": "New Unity Project (1)vvrhpsadfoj [Testing]"
         }
       }
     }

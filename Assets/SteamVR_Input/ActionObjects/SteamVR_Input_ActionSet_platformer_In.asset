@@ -8,13 +8,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c37422aedc41aa7498cce699a6a600c7, type: 3}
+  m_Script: {fileID: 11500000, guid: e92471d1e7aa61d4e8992b02de645411, type: 3}
   m_Name: SteamVR_Input_ActionSet_platformer_In
   m_EditorClassIdentifier: 
   actionSet: {fileID: 0}
   listDirection: 0
   actions:
-  - {fileID: 11400000, guid: fb13ae095bff22b429d6c29dff8a9b64, type: 2}
-  - {fileID: 11400000, guid: 56f8aba2c49698c4ebd0a69679057c1d, type: 2}
-  Move: {fileID: 11400000, guid: fb13ae095bff22b429d6c29dff8a9b64, type: 2}
-  Jump: {fileID: 11400000, guid: 56f8aba2c49698c4ebd0a69679057c1d, type: 2}
+  - {fileID: 11400000, guid: 5535bb83948c1c648abcb75ed6154621, type: 2}
+  - {fileID: 11400000, guid: e8d199802125cfa45ba8dfb07b6072bc, type: 2}
+  Move: {fileID: 11400000, guid: 5535bb83948c1c648abcb75ed6154621, type: 2}
+  Jump: {fileID: 11400000, guid: e8d199802125cfa45ba8dfb07b6072bc, type: 2}

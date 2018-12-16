@@ -13,5 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changeTolerance: 0.000001
   fullPath: /actions/default/in/InteractUI
-  actionSet: {fileID: 11400000, guid: 49afa4dd247f3944db24a4448bf3eac4, type: 2}
+  actionSet: {fileID: 11400000, guid: 85ee428871d00cb418497b5b90defcd5, type: 2}
   direction: 0

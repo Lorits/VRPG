@@ -4,12 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - FxTemporaire
-  - projectile
   - heavy
-  - hammer
   - burnable
   - padlock
+  - hammer
+  - Obstruction
+  - Suckable
+  - Hand
   layers:
   - Default
   - TransparentFX
@@ -20,9 +21,9 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - Skyboxlight
-  - NoHumanInteraction
-  - Teleporting
+  - Obstruction
+  - 
+  - 
   - 
   - 
   - 

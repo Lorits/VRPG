@@ -5,6 +5,7 @@ namespace Valve.VR.InteractionSystem
 {
 
 public class MagnifyTest : MonoBehaviour {
+        public float NowAlpha;
         public int exponent = 20;
         public float lightspan = 0.1f;
         //public float focalPoint = 0.5f;
@@ -43,6 +44,7 @@ public class MagnifyTest : MonoBehaviour {
             //That's because the angle used "under the hood" in a quaternion is half the angle of rotation
             // WHAT!?
             float alpha = CalculateAlpha();
+            NowAlpha = alpha;
             CreateCurve(alpha);
             lineRenderer.colorGradient = SetGradient(alpha);
             if (Input.GetKeyDown(KeyCode.Space))
