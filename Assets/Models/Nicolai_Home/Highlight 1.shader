@@ -65,7 +65,7 @@ Shader "Highlight" {
 				 float alphaCalc = 1-min(1, max(0, time*highlightsize*abs(pow(dotproduct, 1))));
 				 col.w *= alphaCalc;
 				 col.w *= _Opacity;
-				 col+=float4(0.30*(1+sint)+alphaCalc,-0.5,-alphaCalc,0.01);
+				 col+=float4(0.30*(1+sint)+alphaCalc,-0.5,-alphaCalc,0.1);
 
 				 return col;
 			 }

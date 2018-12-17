@@ -16,6 +16,7 @@ TagManager:
   - lockedDoor
   - carFishing
   - drawer
+  - metal
   layers:
   - Default
   - TransparentFX

@@ -242,6 +242,17 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		private void HandHoverUpdate( Hand hand )
         {
+            //worldPlaneNormal = new Vector3(0.0f, 0.0f, 0.0f);
+            //worldPlaneNormal[(int)axisOfRotation] = 1.0f;
+            worldPlaneNormal = new Vector3(0.0f, 0.0f, 0.0f);
+            worldPlaneNormal[(int)axisOfRotation] = 1.0f;
+
+            localPlaneNormal = worldPlaneNormal;
+
+            if (transform.parent)
+            {
+                worldPlaneNormal = transform.parent.localToWorldMatrix.MultiplyVector(worldPlaneNormal).normalized;
+            }
             GrabTypes startingGrabType = hand.GetGrabStarting();
             bool isGrabEnding = hand.IsGrabbingWithType(grabbedWithType) == false;
 
@@ -306,7 +317,6 @@ namespace Valve.VR.InteractionSystem
 			{
 				DrawDebugPath( xForm, toTransformProjected );
 			}
-
 			return toTransformProjected;
 		}
 
@@ -397,8 +407,8 @@ namespace Valve.VR.InteractionSystem
 			}
 			else
 			{
-				// Normalize to [0, 1] based on 360 degree windings
-				float flTmp = outAngle / 360.0f;
+                // Normalize to [0, 1] based on 360 degree windings
+                float flTmp = outAngle / 1440;
 				linearMapping.value = flTmp - Mathf.Floor( flTmp );
 			}
 
